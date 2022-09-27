@@ -1,0 +1,326 @@
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 1.7;
+}
+
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+h4,
+h5 {
+  font-size: 2.3rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+button {
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  background: #4c6e97;
+  cursor: pointer;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 40rem;
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  background: #131c27;
+}
+
+button:active {
+  transition: 0.03s;
+  font-size: 1.2rem;
+}
+
+/* nav section with hero */
+.main-head {
+  background-color: #131c27;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav {
+  min-height: 7vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 1.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+#logo {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+  flex: 2 1 40rem;
+}
+.hero {
+  min-height: 93vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), transparent),
+    url(/img/landing-page.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 3rem;
+}
+
+/* Benefits section */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(img/new-york-page.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  /* text-align: center; */
+}
+
+.locations-head {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.moving-cloud-1 {
+  z-index: 0;
+  opacity: 0.95;
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -3;
+  opacity: 0.6;
+  animation: cloudAnimation 3.5s infinite alternate ease;
+}
+
+/* Benefits section*/
+.benefits-head {
+  background: #343c44;
+  min-height: 30vh;
+  padding: 3rem;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 20px;
+}
+
+.card h4 {
+  margin-top: 2rem;
+}
+
+.card p {
+  margin-top: 1rem;
+}
+
+.cards img {
+  padding: 1rem;
+  width: 100%;
+  background: #4c6e97;
+}
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url(img/contact-mountain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  color: #fff;
+  width: 40%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-head {
+  text-align: center;
+  padding: 3rem;
+}
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-wrapper label {
+  font-size: 1.5rem;
+  margin: auto 2rem;
+}
+
+.form-wrapper input {
+  padding: 0.7rem 2.4rem;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1.2rem;
+  color: #343c44;
+}
+
+.form-wrapper input:focus {
+  background: #fff;
+  color: #343c44;
+}
+.form-wrapper input:active {
+  background: #fff;
+}
+
+#form-submit {
+  position: unset;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
+  margin-top: 5.5rem;
+}
+
+footer {
+  color: #fff;
+  background: #131c27;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  justify-content: center;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* @keyframes cloudAnimation {
+  0% {
+    background: chartreuse;
+  }
+  100% {
+    background: crimson;
+  }
+} */
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%); /* לא לשכוח לעשות אוברפלוו - הידן*/
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* media query */
+@media screen and (max-width: 1475px) {
+  html {
+    font-size: 65%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+  .cloud {
+    height: 30rem;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+}
