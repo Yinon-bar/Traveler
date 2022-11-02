@@ -97,7 +97,7 @@ nav ul li {
 .hero {
   min-height: 93vh;
   background: linear-gradient(rgb(0, 0, 0, 0.5), transparent),
-    url(/img/landing-page.jpg);
+    url(./img/landing-page.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
